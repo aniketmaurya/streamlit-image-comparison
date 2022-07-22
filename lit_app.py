@@ -3,7 +3,7 @@ from lightning.app.frontend import StreamlitFrontend
 
 def render_streamlit(app_state):
     import os
-    os.system("pip uninstall opencv-python && pip install opencv-python")
+    os.system("pip uninstall opencv-python && pip install opencv-python-headless")
     import app
 
 class LitApp(L.LightningFlow):
